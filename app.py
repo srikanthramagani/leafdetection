@@ -26,7 +26,7 @@ languages = {'English': 'en', 'Hindi': 'hi', 'Telugu': 'te', 'Tamil': 'ta', 'Kan
 # Load YOLO model once
 def load_model():
     if "model" not in st.session_state:
-        st.session_state.model = YOLO(r"D:\project\leaf.pt")
+        st.session_state.model = YOLO(r"leaf.pt")
     return st.session_state.model
 
 # Function to fetch disease solution
